@@ -9,9 +9,9 @@
     <title>Vite ➕ Tailwind</title>
   </head>
   <body
-    class="container m-auto h-14 flex-col items-center bg-gradient-to-r from-purple-500 to-pink-500 pb-8"
+    class="m-auto flex h-14 flex-col items-center gap-10 bg-gradient-to-r from-purple-500 to-pink-500 pb-8"
   >
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center py-10 font-semibold text-white">
       <nav class="flex gap-10">
         <a href="#About-Me">About Me</a>
         <a href="#Things-I-do-like">Good</a>
@@ -28,19 +28,19 @@
       </section>
     </div>
     <section class="flex flex-col justify-items-center">
-      <h2 class="p-5 text-center text-4xl font-semibold text-white">
-        You're probably wondering how you got here...again!
+      <h2 class="py-10 text-center text-4xl font-semibold text-white">
+        Let me tell you about myself
       </h2>
     </section>
     <div
-      class="flex w-3/4 flex-col justify-center rounded-3xl border border-white"
+      class="flex w-3/4 flex-col items-center rounded-3xl border border-white"
     >
-      <section class="flex flex-col justify-center" id="About-Me">
+      <section class="flex flex-col items-center" id="About-Me">
         <h2 class="p-5 text-center text-3xl font-semibold text-white">
-          Let me tell you about myself
+          About Me
         </h2>
       </section>
-      <section class="max-x-xs text-center" id="Things-I-do-like">
+      <section class="flex flex-col text-center" id="About-Me">
         <p class="m-20 text-white">
           I'm living in London right now but I'm actually from a place called
           Essex. Pitsea to be exact! If you don't know where that is you can
@@ -48,18 +48,48 @@
           makes it come across as sassy and sassy if GOOD
         </p>
         <img
-          class="flex flex-row items-center p-5 hover:scale-110 hover:transition"
+          class="object-contain p-5 hover:scale-110 hover:transition"
           src="sensational.gif"
           alt="Sensational"
         />
       </section>
     </div>
-    <div>
-      <section id="Things-I-do-not-like">
-        <h2 class="text-2xl text-white">
+    <div
+      class="flex w-3/4 flex-col justify-center rounded-3xl border border-white"
+    >
+      <section class="flex flex-col items-center" id="Things-I-do-like">
+        <h2 class="py-10 text-2xl text-white">
+          This is a list of things I don like
+        </h2>
+        <table class="py-10 text-white md:table-fixed">
+          <thead>
+            <tr>
+              <th>The Things</th>
+              <th>Ratings out of 10</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jollof Rice</td>
+              <td>Basketball</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+        <img
+          class="h-30 w-30 items-center p-5 hover:scale-110 hover:transition"
+          src="spongebob.jpg.webp"
+          alt="SpongeBob"
+        />
+      </section>
+      <section class="flex flex-col items-center" id="Things-I-do-not-like">
+        <h2 class="py-10 text-2xl text-white">
           This is a list of things I don't like
         </h2>
-        <table class="p-5 text-white md:table-fixed">
+        <table class="py-10 text-white md:table-fixed">
           <thead>
             <tr>
               <th>The Things</th>
